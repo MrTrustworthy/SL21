@@ -1,0 +1,61 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+     <div class="container">
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+          <div class="chatbox">
+
+              Aviable Ressources: <img src="static/game/s_wood.png"> {{ town.ressource_wood }}
+              <img src="static/game/s_stone.png"> {{ town.ressource_stone }}
+              <img src="static/game/s_food.png"> {{ town.ressource_food }}
+              <img src="static/game/s_population.png"> {{ town.ressource_population }} <br>
+              <br>
+              <br>
+              <br>
+              <table border="1">
+
+                  {% for building in building_list %}
+                        <tr>
+                            <td> <img src="static/game/b_{{building.name}}.png"> </td>
+
+                            <td>{{ building.name }}</td>
+                            <td>
+                                Production: <br>
+                                <img src="static/game/s_wood.png"> {{ building.production_wood }}
+                                <img src="static/game/s_stone.png"> {{ building.production_stone }}
+                                <img src="static/game/s_food.png"> {{ building.production_food }}
+                                <img src="static/game/s_population.png"> {{ building.production_population }}
+                            </td>
+                            <td>
+                                Cost to Build: <br>
+                                <img src="static/game/s_wood.png"> {{ building.upgrade_cost_wood }}
+                                <img src="static/game/s_stone.png"> {{ building.upgrade_cost_stone }}
+                                <img src="static/game/s_food.png"> {{ building.upgrade_cost_food }}
+                                <img src="static/game/s_population.png"> {{ building.upgrade_cost_population }}
+                            </td>
+                            <td>
+                                <form action="/build" method="post">
+                                    <input type="hidden" name="requested_action" value="construct_new_building">
+                                    <input type="hidden" name="building_name" value="{{ building.name }}">
+                                    <input type="submit" value="Construct">
+                                </form>
+                            </td>
+                        </tr>
+                  {% endfor %}
+              </table>
+              <br>
+              <br>
+              <br>
+
+              <form action="/game" method="get">
+                  <input type="submit" value="Cancel">
+              </form>
+
+          </div>
+      </div>
+
+    </div> <!-- /container -->
+
+{% endblock %}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="static/21.png">
+
+    <title>SL21 Sign-Up</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="static/signin.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <form class="form-signin" role="form" action="/register" method="POST">
+        <h2 class="form-signin-heading">Please choose name and password</h2>
+        <input type="text" class="form-control" placeholder="Username" name="user_name" required autofocus>
+        <input type="text" class="form-control" placeholder="Town Name" name="town_name" required autofocus>
+        <input type="password" class="form-control" placeholder="Password" name="password" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up!</button>
+      </form>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>

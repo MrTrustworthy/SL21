@@ -1,0 +1,31 @@
+
+{% extends "header.html" %}
+
+{% block body %}
+    <div class="container">
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+          <div class="chatbox">
+            {% for chat in chatlog %}
+
+                    {% if is_admin %}
+                    <a href="/chat/deletepost?post_id={{ chat[0] }}">[x]</a>
+                    {% endif %}
+
+                    <a class="timestamp">[{{ chat[2] }}]</a>
+                    <a class="username">{{ chat[3] }}:  </a>
+                    <a class="chatpost">{{ chat[4] }}</a>
+                    <br>
+
+            {% endfor %}
+          </div>
+        </br>
+        <form action="/chat" method="post">
+            <input type="text" name="content" size="100" autofocus>
+        </form>
+
+      </div>
+
+    </div> <!-- /container -->
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+     <div class="container">
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+          <div class="chatbox">
+
+
+              {% for user in user_list %}
+                    {{ user }}<br>
+              {% endfor %}
+                <br><br><br>
+              {% for town in town_list %}
+                    {{ town }}<br>
+              {% endfor %}
+
+
+
+          </div>
+      </div>
+
+    </div> <!-- /container -->
+
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+     <div class="container">
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+          <div class="chatbox">
+
+
+
+              Welcome to your Town <b>{{ town.name }}</b>, {{ town.owner }}!<br>
+
+              Aviable Ressources: <img src="static/game/s_wood.png"> {{ town.ressource_wood }}
+              <img src="static/game/s_stone.png"> {{ town.ressource_stone }}
+              <img src="static/game/s_food.png"> {{ town.ressource_food }}
+              <img src="static/game/s_population.png"> {{ town.ressource_population }} <br>
+              <br>
+              <br>
+              <br>
+              <table border="1">
+
+                  {% for building in town.building_list %}
+                        <tr>
+                            <td> <img src="static/game/b_{{building.name}}.png"> </td>
+
+                            <td>{{ building.name }} Level: {{ building.level }}</td>
+                            <td>
+                                Production: <br>
+                                <img src="static/game/s_wood.png"> {{ building.production_wood }}
+                                <img src="static/game/s_stone.png"> {{ building.production_stone }}
+                                <img src="static/game/s_food.png"> {{ building.production_food }}
+                                <img src="static/game/s_population.png"> {{ building.production_population }}
+                            </td>
+                            <td>
+                                Cost to Upgrade: <br>
+                                <img src="static/game/s_wood.png"> {{ building.upgrade_cost_wood }}
+                                <img src="static/game/s_stone.png"> {{ building.upgrade_cost_stone }}
+                                <img src="static/game/s_food.png"> {{ building.upgrade_cost_food }}
+                                <img src="static/game/s_population.png"> {{ building.upgrade_cost_population }}
+                            </td>
+                            <td>
+                                <form action="/game" method="post">
+                                    <input type="hidden" name="requested_action" value="upgrade_building">
+                                    <input type="hidden" name="building_name" value="{{ building.name }}">
+                                    <input type="submit" value="Upgrade">
+                                </form>
+                            </td>
+                        </tr>
+                  {% endfor %}
+              </table>
+              <br>
+              <br>
+              <br>
+              {% set production = town.get_total_production() %}
+              Total Production per Turn:
+              <img src="static/game/s_wood.png"> {{ production["wood"] }}
+              <img src="static/game/s_stone.png"> {{ production["stone"] }}
+              <img src="static/game/s_food.png"> {{ production["food"] }}
+              <img src="static/game/s_population.png"> {{ production["population"] }} <br>
+
+
+
+              <form action="/build" method="get">
+                  <input type="submit" value="Construct a new Building">
+              </form>
+          </div>
+      </div>
+
+    </div> <!-- /container -->
+
+{% endblock %}
