@@ -12,11 +12,11 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/SL21$db_handler.coverage" NAME="db_handler Coverage Results" MODIFIED="1400254872625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProjectSL" />
-    <SUITE FILE_PATH="coverage/SL21$run_app.coverage" NAME="run_app Coverage Results" MODIFIED="1400441748020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SL21$db_handler.coverage" NAME="db_handler Coverage Results" MODIFIED="1400458656915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProjectSL" />
+    <SUITE FILE_PATH="coverage/SL21$run_app.coverage" NAME="run_app Coverage Results" MODIFIED="1400458927198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SL21$error_handling.coverage" NAME="error_handling Coverage Results" MODIFIED="1400428267768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProjectSL" />
     <SUITE FILE_PATH="coverage/SL21$game.coverage" NAME="game Coverage Results" MODIFIED="1400200066257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProjectSL" />
-    <SUITE FILE_PATH="coverage/SL21$town_db_handler.coverage" NAME="town_db_handler Coverage Results" MODIFIED="1400254851815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProjectSL" />
+    <SUITE FILE_PATH="coverage/SL21$town_db_handler.coverage" NAME="town_db_handler Coverage Results" MODIFIED="1400458623334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProjectSL" />
     <SUITE FILE_PATH="coverage/SL21$database_handler.coverage" NAME="database_handler Coverage Results" MODIFIED="1398633186596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProjectSL" />
     <SUITE FILE_PATH="coverage/SL21$threadingtest.coverage" NAME="threadingtest Coverage Results" MODIFIED="1398720544798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../samp/dont need" />
     <SUITE FILE_PATH="coverage/SL21$yx.coverage" NAME="yx Coverage Results" MODIFIED="1400115158008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../xml_test" />
@@ -36,10 +36,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="building.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjectSL/building.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="103" column="66" selection-start="4228" selection-end="4228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1955">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjectSL/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="12" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0" vertical-offset="2128" max-vertical-offset="2737">
+            <state line="41" column="29" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.0" vertical-offset="377" max-vertical-offset="2720">
               <folding>
                 <element signature="e#30#107#0" expanded="true" />
               </folding>
@@ -50,26 +59,55 @@
       <file leaf-file-name="buildings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/buildings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="70" selection-start="1849" selection-end="1849" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1139">
+            <state line="18" column="37" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="town.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="town.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ProjectSL/templates/town.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="0" selection-start="3076" selection-end="3076" vertical-scroll-proportion="-11.769231" vertical-offset="714" max-vertical-offset="1309">
+            <state line="21" column="18" selection-start="952" selection-end="952" vertical-scroll-proportion="0.5219298" vertical-offset="0" max-vertical-offset="1581">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="construct_building.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjectSL/templates/construct_building.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="18" selection-start="906" selection-end="906" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="1326">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db_handler.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjectSL/db_handler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="71" column="21" selection-start="2402" selection-end="2402" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1615">
+              <folding>
+                <marker date="1400424073594" expanded="true" signature="260:390" placeholder="CREATE TABLE..users..." />
+                <marker date="1400424073594" expanded="true" signature="421:669" placeholder="CREATE TABLE..chatlogs..." />
+                <marker date="1400424073594" expanded="true" signature="840:871" placeholder="INSERT INTO ..." />
+                <marker date="1400424073594" expanded="true" signature="1145:1184" placeholder="SELECT passw..users..." />
+                <marker date="1400424073594" expanded="true" signature="1648:1667" placeholder="SELECT * FRO..users..." />
+                <marker date="1400424073594" expanded="true" signature="1982:2028" placeholder="INSERT INTO ..." />
+                <marker date="1400424073594" expanded="true" signature="2319:2341" placeholder="SELECT * FRO..chatlogs..." />
+                <marker date="1400424073594" expanded="true" signature="2539:2570" placeholder="DELETE FROM ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjectSL/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="24" selection-start="166" selection-end="166" vertical-scroll-proportion="-1.2561576" vertical-offset="816" max-vertical-offset="1496">
-              <folding />
+            <state line="33" column="35" selection-start="664" selection-end="666" vertical-scroll-proportion="4.2884617" vertical-offset="716" max-vertical-offset="1496">
+              <folding>
+                <marker date="1400443497366" expanded="true" signature="891:1687" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,26 +115,38 @@
       <file leaf-file-name="town.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjectSL/town.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="49" selection-start="2602" selection-end="2602" vertical-scroll-proportion="-10.730769" vertical-offset="1030" max-vertical-offset="3315">
+            <state line="200" column="54" selection-start="7418" selection-end="7418" vertical-scroll-proportion="-22.884615" vertical-offset="2176" max-vertical-offset="4080">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app_config.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjectSL/app_config.py">
+      <file leaf-file-name="run_app.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run_app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="23" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+            <state line="12" column="23" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="error_handling.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjectSL/error_handling.py">
+      <file leaf-file-name="town_db_handler.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjectSL/town_db_handler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="68" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
-              <folding />
+            <state line="131" column="0" selection-start="4772" selection-end="4772" vertical-scroll-proportion="-14.307693" vertical-offset="1449" max-vertical-offset="2295">
+              <folding>
+                <marker date="1400457413099" expanded="true" signature="241:857" placeholder="CREATE TABLE..towns..." />
+                <marker date="1400457413099" expanded="true" signature="888:1021" placeholder="CREATE TABLE..buildings..." />
+                <marker date="1400457413099" expanded="true" signature="1225:1260" placeholder="INSERT INTO ..." />
+                <marker date="1400457413099" expanded="true" signature="1459:1496" placeholder="DELETE FROM ..." />
+                <marker date="1400457413099" expanded="true" signature="1914:1987" placeholder="UPDATE build..." />
+                <marker date="1400457413099" expanded="true" signature="2291:2331" placeholder="SELECT * FRO..buildings..." />
+                <marker date="1400457413099" expanded="true" signature="2644:2694" placeholder="INSERT INTO ..." />
+                <marker date="1400457413099" expanded="true" signature="3078:3628" placeholder="UPDATE towns..." />
+                <marker date="1400457413099" expanded="true" signature="3990:4028" placeholder="SELECT * FRO..towns..." />
+                <marker date="1400457413099" expanded="true" signature="4087:4106" placeholder="SELECT * FRO..towns..." />
+                <marker date="1400457413099" expanded="true" signature="4307:4345" placeholder="SELECT * FRO..towns..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,22 +161,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/ProjectSL/building.py" />
         <option value="$PROJECT_DIR$/ProjectSL/templates/register.html" />
-        <option value="$PROJECT_DIR$/ProjectSL/templates/construct_building.html" />
         <option value="$PROJECT_DIR$/ProjectSL/templates/profiles.html" />
         <option value="$PROJECT_DIR$/ProjectSL/db_handler.py" />
-        <option value="$PROJECT_DIR$/ProjectSL/town_db_handler.py" />
         <option value="$PROJECT_DIR$/ProjectSL/templates/login.html" />
         <option value="$PROJECT_DIR$/ProjectSL/templates/header.html" />
-        <option value="$PROJECT_DIR$/ProjectSL/templates/town.html" />
-        <option value="$PROJECT_DIR$/ProjectSL/app_config.py" />
         <option value="$PROJECT_DIR$/ProjectSL/buildings.xml" />
+        <option value="$PROJECT_DIR$/ProjectSL/game.py" />
+        <option value="$PROJECT_DIR$/ProjectSL/app_config.py" />
+        <option value="$PROJECT_DIR$/ProjectSL/views.py" />
+        <option value="$PROJECT_DIR$/ProjectSL/town_db_handler.py" />
+        <option value="$PROJECT_DIR$/ProjectSL/building.py" />
         <option value="$PROJECT_DIR$/ProjectSL/error_handling.py" />
         <option value="$PROJECT_DIR$/ProjectSL/town.py" />
+        <option value="$PROJECT_DIR$/ProjectSL/templates/town.html" />
+        <option value="$PROJECT_DIR$/ProjectSL/templates/construct_building.html" />
         <option value="$PROJECT_DIR$/buildings.xml" />
-        <option value="$PROJECT_DIR$/ProjectSL/views.py" />
-        <option value="$PROJECT_DIR$/ProjectSL/game.py" />
       </list>
     </option>
   </component>
@@ -542,9 +592,9 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.run_app" />
-        <item index="1" class="java.lang.String" itemvalue="Python.error_handling" />
-        <item index="2" class="java.lang.String" itemvalue="Python.db_handler" />
-        <item index="3" class="java.lang.String" itemvalue="Python.town_db_handler" />
+        <item index="1" class="java.lang.String" itemvalue="Python.db_handler" />
+        <item index="2" class="java.lang.String" itemvalue="Python.town_db_handler" />
+        <item index="3" class="java.lang.String" itemvalue="Python.error_handling" />
         <item index="4" class="java.lang.String" itemvalue="Python.building" />
       </list>
     </recent_temporary>
@@ -577,18 +627,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16875" sideWeight="0.68722945" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16875" sideWeight="0.7965368" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31277058" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31277058" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2034632" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -612,27 +662,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ProjectSL/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1353" selection-end="1527" vertical-scroll-proportion="-9.346154" vertical-offset="403" max-vertical-offset="986">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectSL/templates/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="22" selection-start="1641" selection-end="1641" vertical-scroll-proportion="-13.269231" vertical-offset="505" max-vertical-offset="1088">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/json/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="249" column="0" selection-start="9794" selection-end="9794" vertical-scroll-proportion="0.0" vertical-offset="4013" max-vertical-offset="6052">
@@ -661,25 +690,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectSL/db_handler.py">
+    <entry file="file://$PROJECT_DIR$/ProjectSL/error_handling.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="55" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.5334477" vertical-offset="301" max-vertical-offset="1615">
-          <folding>
-            <marker date="1400424073594" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..users..." />
-            <marker date="1400424073594" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..chatlogs..." />
-            <marker date="1400424073594" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1400424073594" expanded="true" signature="-1:-1" placeholder="SELECT passw..users..." />
-            <marker date="1400424073594" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1400424073594" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1400424073594" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..chatlogs..." />
-            <marker date="1400424073594" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectSL/templates/town.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="3076" selection-end="3076" vertical-scroll-proportion="-11.769231" vertical-offset="714" max-vertical-offset="1309">
+        <state line="20" column="36" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
           <folding />
         </state>
       </provider>
@@ -691,39 +704,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectSL/error_handling.py">
+    <entry file="file://$PROJECT_DIR$/ProjectSL/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="68" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
-          <folding />
+        <state line="33" column="35" selection-start="664" selection-end="666" vertical-scroll-proportion="4.2884617" vertical-offset="716" max-vertical-offset="1496">
+          <folding>
+            <marker date="1400443497366" expanded="true" signature="891:1687" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectSL/town.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="49" selection-start="2602" selection-end="2602" vertical-scroll-proportion="-10.730769" vertical-offset="1030" max-vertical-offset="3315">
+        <state line="200" column="54" selection-start="7418" selection-end="7418" vertical-scroll-proportion="-22.884615" vertical-offset="2176" max-vertical-offset="4080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectSL/town_db_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="0" selection-start="4772" selection-end="4772" vertical-scroll-proportion="-14.307693" vertical-offset="1449" max-vertical-offset="2295">
+          <folding>
+            <marker date="1400457413099" expanded="true" signature="241:857" placeholder="CREATE TABLE..towns..." />
+            <marker date="1400457413099" expanded="true" signature="888:1021" placeholder="CREATE TABLE..buildings..." />
+            <marker date="1400457413099" expanded="true" signature="1225:1260" placeholder="INSERT INTO ..." />
+            <marker date="1400457413099" expanded="true" signature="1459:1496" placeholder="DELETE FROM ..." />
+            <marker date="1400457413099" expanded="true" signature="1914:1987" placeholder="UPDATE build..." />
+            <marker date="1400457413099" expanded="true" signature="2291:2331" placeholder="SELECT * FRO..buildings..." />
+            <marker date="1400457413099" expanded="true" signature="2644:2694" placeholder="INSERT INTO ..." />
+            <marker date="1400457413099" expanded="true" signature="3078:3628" placeholder="UPDATE towns..." />
+            <marker date="1400457413099" expanded="true" signature="3990:4028" placeholder="SELECT * FRO..towns..." />
+            <marker date="1400457413099" expanded="true" signature="4087:4106" placeholder="SELECT * FRO..towns..." />
+            <marker date="1400457413099" expanded="true" signature="4307:4345" placeholder="SELECT * FRO..towns..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectSL/db_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="21" selection-start="2402" selection-end="2402" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1615">
+          <folding>
+            <marker date="1400424073594" expanded="true" signature="260:390" placeholder="CREATE TABLE..users..." />
+            <marker date="1400424073594" expanded="true" signature="421:669" placeholder="CREATE TABLE..chatlogs..." />
+            <marker date="1400424073594" expanded="true" signature="840:871" placeholder="INSERT INTO ..." />
+            <marker date="1400424073594" expanded="true" signature="1145:1184" placeholder="SELECT passw..users..." />
+            <marker date="1400424073594" expanded="true" signature="1648:1667" placeholder="SELECT * FRO..users..." />
+            <marker date="1400424073594" expanded="true" signature="1982:2028" placeholder="INSERT INTO ..." />
+            <marker date="1400424073594" expanded="true" signature="2319:2341" placeholder="SELECT * FRO..chatlogs..." />
+            <marker date="1400424073594" expanded="true" signature="2539:2570" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="23" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectSL/templates/construct_building.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="18" selection-start="906" selection-end="906" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="1326">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/buildings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="70" selection-start="1849" selection-end="1849" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1139">
+        <state line="18" column="37" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectSL/building.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="66" selection-start="4228" selection-end="4228" vertical-scroll-proportion="0.0" vertical-offset="1278" max-vertical-offset="1955">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjectSL/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="12" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0" vertical-offset="2128" max-vertical-offset="2737">
+        <state line="41" column="29" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.0" vertical-offset="377" max-vertical-offset="2720">
           <folding>
             <element signature="e#30#107#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectSL/game.py">
+    <entry file="file://$PROJECT_DIR$/ProjectSL/templates/town.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="24" selection-start="166" selection-end="166" vertical-scroll-proportion="-1.2561576" vertical-offset="816" max-vertical-offset="1496">
+        <state line="21" column="18" selection-start="952" selection-end="952" vertical-scroll-proportion="0.5219298" vertical-offset="0" max-vertical-offset="1581">
           <folding />
         </state>
       </provider>

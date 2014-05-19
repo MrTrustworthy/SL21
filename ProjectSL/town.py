@@ -4,16 +4,20 @@ from building import get_building, get_all_aviable_building_names
 from error_handling import *
 class Town(object):
     
-    def __init__(self, id, name, owner, wood, stone, food, population):
+    def __init__(self, id, name, owner, wood, stone, food, water, iron, coal, gold, population):
 
         self.id = id
         self.name = name
         self.owner = owner
 
-        self.ressource_wood = wood
-        self.ressource_stone = stone
-        self.ressource_food = food
-        self.ressource_population = population
+        self.resource_wood = wood
+        self.resource_stone = stone
+        self.resource_food = food
+        self.resource_water = water
+        self.resource_iron = iron
+        self.resource_coal = coal
+        self.resource_gold = gold
+        self.resource_population = population
 
         self.building_list = list()
 
@@ -21,11 +25,15 @@ class Town(object):
     #
     # BASIC INFORMATION GETTERS
     #
-    def get_ressources(self):
-        d = {"wood": self.ressource_wood,
-             "stone": self.ressource_stone,
-             "food": self.ressource_food,
-             "population": self.ressource_population}
+    def get_resources(self):
+        d = {"wood": self.resource_wood,
+             "stone": self.resource_stone,
+             "food": self.resource_food,
+             "water": self.resource_water,
+             "iron": self.resource_iron,
+             "coal": self.resource_coal,
+             "gold": self.resource_gold,
+             "population": self.resource_population}
         return d
 
 
@@ -33,12 +41,20 @@ class Town(object):
         d = {"wood": 0,
              "stone": 0,
              "food": 0,
+             "water": 0,
+             "iron": 0,
+             "coal": 0,
+             "gold": 0,
              "population": 0}
         for building in self.building_list:
             d2 = building.get_production()
             d["wood"] = d["wood"] + int(d2["wood"])
             d["stone"] = d["stone"] + int(d2["stone"])
             d["food"] = d["food"] + int(d2["food"])
+            d["water"] = d["water"] + int(d2["water"])
+            d["iron"] = d["iron"] + int(d2["iron"])
+            d["coal"] = d["coal"] + int(d2["coal"])
+            d["gold"] = d["gold"] + int(d2["gold"])
             d["population"] = d["population"] + int(d2["population"])
         return d
 
@@ -46,18 +62,27 @@ class Town(object):
     #
     # BUILDING RELATED FUNCTIONS
     #
-    def withdraw_ressources(self, wood, stone, food, population):
-        if ( self.ressource_wood - wood >= 0 ) \
-        and ( self.ressource_stone - stone >= 0 )\
-        and ( self.ressource_food - food >= 0 )\
-        and ( self.ressource_population - population >= 0 ): #if enough ressources are aviable
+    def withdraw_resources(self, wood, stone, food, water, iron, coal, gold, population):
+        if ( self.resource_wood - wood >= 0 ) \
+        and ( self.resource_stone - stone >= 0 ) \
+        and ( self.resource_food - food >= 0 ) \
+        and ( self.resource_water - water >= 0 ) \
+        and ( self.resource_iron - iron >= 0 ) \
+        and ( self.resource_coal - coal >= 0 ) \
+        and ( self.resource_gold - gold >= 0 ) \
+        and ( self.resource_population - population >= 0 ):
 
-            self.ressource_wood -= wood
-            self.ressource_stone -= stone
-            self.ressource_food -= food
-            self.ressource_population -= population
+            self.resource_wood -= wood
+            self.resource_stone -= stone
+            self.resource_food -= food
+            self.resource_water -= water
+            self.resource_iron -= iron
+            self.resource_coal -= coal
+            self.resource_gold -= gold
+            self.resource_population -= population
+
         else:
-            raise NotEnoughRessources(self.name)
+            raise NotEnoughResources(self.name)
 
 
 
@@ -68,7 +93,8 @@ class Town(object):
 
         aviable_buildings_list = list()
         for name in name_list:
-            aviable_buildings_list.append(get_building(name, 0)) # LVL 0 Building contains cost for creating and production of a lvl 1 building
+            # LVL 0 Building contains cost for creating and production of a lvl 1 building
+            aviable_buildings_list.append(get_building(name, 0))
         return aviable_buildings_list
 
 
@@ -80,8 +106,11 @@ class Town(object):
         cost = create_building.get_upgrade_cost()
 
         try:
-            self.withdraw_ressources(int(cost["wood"]), int(cost["stone"]), int(cost["food"]), int(cost["population"]))
-        except (NotEnoughRessources), e:
+            self.withdraw_resources(int(cost["wood"]), int(cost["stone"]),
+                                    int(cost["food"]), int(cost["water"]),
+                                    int(cost["iron"]), int(cost["coal"]),
+                                    int(cost["gold"]), int(cost["population"]))
+        except (NotEnoughResources), e:
             e.purpose = "building " + building_name
             raise e
         else:
@@ -95,10 +124,14 @@ class Town(object):
                 cost = building.get_upgrade_cost()
 
                 try:
-                    self.withdraw_ressources( int(cost["wood"]), int(cost["stone"]), int(cost["food"]), int(cost["population"]) )
-                except NotEnoughRessources, e:
+                    self.withdraw_resources(int(cost["wood"]), int(cost["stone"]),
+                                            int(cost["food"]), int(cost["water"]),
+                                            int(cost["iron"]), int(cost["coal"]),
+                                            int(cost["gold"]), int(cost["population"]))
+                except NotEnoughResources, e:
                     e.purpose = "upgrading " + building_name
                     raise e
+                else:
                     new_building = get_building(building.name, (building.level+1) )
                     self.building_list.remove(building)
                     self.building_list.append(new_building)
@@ -110,20 +143,28 @@ class Town(object):
     #
     def process_tick(self):
         production = self.get_total_production()
-        self.ressource_wood += production["wood"]
-        self.ressource_stone += production["stone"]
-        self.ressource_food += production["food"]
-        self.ressource_population += production["population"]
+        self.resource_wood += production["wood"]
+        self.resource_stone += production["stone"]
+        self.resource_food += production["food"]
+        self.resource_water += production["water"]
+        self.resource_iron += production["coal"]
+        self.resource_coal += production["iron"]
+        self.resource_gold += production["gold"]
+        self.resource_population += production["population"]
 
 
 
     def __str__(self):
         return "Town: (" + str(self.id) + ") " \
                + self.name + "/" + self.owner + "[" \
-               + str(self.ressource_wood) + ":"\
-               + str(self.ressource_stone) + ":"\
-               + str(self.ressource_food) + ":"\
-               + str(self.ressource_population) + "] Buildings:\n" \
+               + str(self.resource_wood) + ":"\
+               + str(self.resource_stone) + ":"\
+               + str(self.resource_food) + ":" \
+               + str(self.resource_water) + ":" \
+               + str(self.resource_iron) + ":" \
+               + str(self.resource_coal) + ":" \
+               + str(self.resource_gold) + ":"\
+               + str(self.resource_population) + "] Buildings:\n" \
                + str([ (str(building)) for building in self.building_list]) + "\n"
 
     def __repr__(self):
@@ -137,7 +178,7 @@ def load_towns():
     town_list = list()
     db_elements = town_db_handler.get_towns()
     for town in db_elements:
-        t = Town(town[0], town[1], town[2], town[3], town[4], town[5], town[6])
+        t = Town(town[0], town[1], town[2], town[3], town[4], town[5], town[6], town[7], town[8], town[9], town[10])
         buildings = town_db_handler.get_buildings(t.id)
         for building in buildings:
             b = get_building(building[1], building[2])
@@ -151,10 +192,14 @@ def save_towns(town_list):
         town_db_handler.update_town(town.id,
                                     town.name,
                                     town.owner,
-                                    town.ressource_wood,
-                                    town.ressource_stone,
-                                    town.ressource_food,
-                                    town.ressource_population)
+                                    town.resource_wood,
+                                    town.resource_stone,
+                                    town.resource_food,
+                                    town.resource_water,
+                                    town.resource_iron,
+                                    town.resource_coal,
+                                    town.resource_gold,
+                                    town.resource_population)
         town_db_handler.delete_all_buildings(town.id)
         for building in town.building_list:
             town_db_handler.add_building(town.id, building.name, building.level)
@@ -167,7 +212,7 @@ def save_towns(town_list):
 
 if __name__ == "__main__":
     towns = load_towns()
-    #towns[0].ressource_wood = 222
+    #towns[0].resource_wood = 222
     print towns
     for town in towns:
         print town.name, town.get_total_production()

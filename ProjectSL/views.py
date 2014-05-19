@@ -112,7 +112,6 @@ def profile_page():
 @app.route("/chat/deletepost", methods=["GET"])
 @login_required
 def delete_post():
-    #print "wanting to delete post id:" + request.args.get("post_id")
     db_handler.delete_chatlog(request.args.get("post_id"))
     return redirect(url_for("chat_page"))
 
@@ -125,8 +124,6 @@ def delete_post():
 def login_page():
     if request.method == "GET":
         return render_template("login.html")
-
-
     elif request.method == "POST":
         try:
             db_handler.confirm_user_login(request.form["name"], request.form["password"])
@@ -135,7 +132,6 @@ def login_page():
             return render_template("login.html")
         else:
             session["user_name"] = request.form["name"]
-            flash("You've been logged in")
             return redirect(url_for("chat_page"))
 
 
@@ -150,7 +146,10 @@ def register_page():
     if request.method == "GET":
         return render_template("register.html")
     elif request.method == "POST":
-        db_handler.add_user(request.form["user_name"], request.form["password"])
-        town_db_handler.add_town(request.form["town_name"], request.form["user_name"])
+        try:
+            db_handler.add_user(request.form["user_name"], request.form["password"])
+            town_db_handler.add_town(request.form["town_name"], request.form["user_name"])
+        except Exception, e:
+            flash(str(e))
         game.process_command("", "reload")
         return render_template("login.html")

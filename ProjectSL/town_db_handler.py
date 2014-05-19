@@ -13,10 +13,14 @@ def setup_tables():
                         town_id integer PRIMARY KEY AUTOINCREMENT,
                         town_name text,
                         town_owner text,
-                        town_ressource_wood integer,
-                        town_ressource_stone integer,
-                        town_ressource_food integer,
-                        town_ressource_population integer
+                        town_resource_wood integer,
+                        town_resource_stone integer,
+                        town_resource_food integer,
+                        town_resource_water integer,
+                        town_resource_iron integer,
+                        town_resource_coal integer,
+                        town_resource_gold integer,
+                        town_resource_population integer
                         )""")
         cursor.execute("""CREATE TABLE buildings(
             town_id integer,
@@ -60,27 +64,31 @@ def get_buildings(town_id):
 #
 # TOWN HANDLING
 #
-def add_town(name, owner, wood=10, stone=10, food=5, population=1):
+def add_town(name, owner, wood=10, stone=10, food=5, water=5, iron=0, coal=0, gold=10, population=1):
     with sqlite3.connect(TOWN_DB_URI) as connection:
         cursor = connection.cursor()
-        cursor.execute("""INSERT INTO towns VALUES(NULL,?,?,?,?,?,?)""", (name, owner, wood, stone, food, population))
+        cursor.execute("""INSERT INTO towns VALUES(NULL,?,?,?,?,?,?,?,?,?,?)""", (name, owner, wood, stone, food, water, iron, coal, gold, population))
         if cursor.rowcount == 0:
             raise error_handling.DatabaseQueryFailed("add town")
 
 
 
 
-def update_town(id, name, owner, wood, stone, food, population):
+def update_town(id, name, owner, wood, stone, food, water, iron, coal, gold, population):
     with sqlite3.connect(TOWN_DB_URI) as connection:
         cursor = connection.cursor()
         cursor.execute("""UPDATE towns SET
                             town_name=?,
                             town_owner=?,
-                            town_ressource_wood=?,
-                            town_ressource_stone=?,
-                            town_ressource_food=?,
-                            town_ressource_population=?
-                            WHERE town_id=?""", (name, owner, wood, stone, food, population, id))
+                            town_resource_wood=?,
+                            town_resource_stone=?,
+                            town_resource_food=?,
+                            town_resource_water=?,
+                            town_resource_iron=?,
+                            town_resource_coal=?,
+                            town_resource_gold=?,
+                            town_resource_population=?
+                            WHERE town_id=?""", (name, owner, wood, stone, food, water, iron, coal, gold, population, id))
         if cursor.rowcount == 0:
             raise error_handling.DatabaseQueryFailed("update town")
 

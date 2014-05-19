@@ -18,12 +18,12 @@ class DatabaseQueryFailed(Exception):
     def __str__(self):
         return "Datbase Query Failed: " + self.query_info
 
-class NotEnoughRessources(Exception):
+class NotEnoughResources(Exception):
     def __init__(self, town_name):
         self.town_name = town_name
         self.purpose = "unknown"
     def __str__(self):
-        return "Not Enough ressources in " + self.town_name + " for " + self.purpose
+        return "Not Enough resources in " + self.town_name + " for " + self.purpose
 
 class BuildingAlreadyExists(Exception):
     def __init__(self, building_name):
