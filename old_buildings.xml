@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<buildings>
+
+    <building name="Headquarter">
+        <level value="0">
+            <production wood="1" stone="1" food="1" water="1" iron="1" coal="1" gold="1" population="1" />
+            <upgrade_cost wood="1" stone="1" food="1" water="0" iron="0" coal="0" gold="0" population="1" />
+        </level>
+        <level value="1">
+            <production wood="1" stone="1" food="1" water="1" iron="1" coal="1" gold="1" population="1" />
+            <upgrade_cost wood="1" stone="1" food="1" water="0" iron="0" coal="0" gold="0" population="1" />
+        </level>
+        <level value="2">
+            <production wood="1" stone="1" food="1" water="1" iron="1" coal="1" gold="1" population="1" />
+            <upgrade_cost wood="1" stone="1" food="1" water="0" iron="0" coal="0" gold="0" population="1" />
+        </level>
+        <level value="3">
+            <production wood="1" stone="1" food="1" water="1" iron="1" coal="1" gold="1" population="1" />
+            <upgrade_cost wood="10000" stone="1" food="1" water="0" iron="0" coal="0" gold="0" population="1" />
+        </level>
+    </building>
+
+
+    <building name="Farm">
+        <level value="0">
+            <production wood="1" stone="1" food="1" water="1" iron="1" coal="1" gold="1" population="1" />
+            <upgrade_cost wood="1" stone="1" food="1" water="0" iron="0" coal="0" gold="0" population="1" />
+        </level>
+        <level value="1">
+            <production wood="1" stone="1" food="1" water="1" iron="1" coal="1" gold="1" population="1" />
+            <upgrade_cost wood="1" stone="1" food="1" water="0" iron="0" coal="0" gold="0" population="1" />
+        </level>
+        <level value="2">
+            <production wood="1" stone="1" food="1" water="1" iron="1" coal="1" gold="1" population="1" />
+            <upgrade_cost wood="1" stone="1" food="1" water="0" iron="0" coal="0" gold="0" population="1" />
+        </level>
+        <level value="3">
+            <production wood="1" stone="1" food="1" water="1" iron="1" coal="1" gold="1" population="1" />
+            <upgrade_cost wood="1" stone="10000" food="1" water="0" iron="0" coal="0" gold="0" population="1" />
+        </level>
+    </building>
+
+    <building name="Fountain">
+        <level value="0">
+            <production wood="1" stone="1" food="1" water="1" iron="1" coal="1" gold="1" population="1" />
+            <upgrade_cost wood="1" stone="1" food="1" water="0" iron="0" coal="0" gold="0" population="1" />
+        </level>
+        <level value="1">
+            <production wood="1" stone="1" food="1" water="1" iron="1" coal="1" gold="1" population="1" />
+            <upgrade_cost wood="1" stone="1" food="1" water="0" iron="0" coal="0" gold="0" population="1" />
+        </level>
+        <level value="2">
+            <production wood="1" stone="1" food="1" water="1" iron="1" coal="1" gold="1" population="1" />
+            <upgrade_cost wood="1" stone="1" food="1" water="0" iron="0" coal="0" gold="0" population="1" />
+        </level>
+        <level value="3">
+            <production wood="1" stone="1" food="1" water="1" iron="1" coal="1" gold="1" population="1" />
+            <upgrade_cost wood="1" stone="1" food="10000" water="0" iron="0" coal="0" gold="0" population="1" />
+        </level>
+    </building>
+
+</buildings>
